@@ -1,0 +1,35 @@
+[2018-01-19 06:05:55,773][ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[2018-01-19 06:05:55,773][ceph_deploy.cli][INFO  ] Invoked (1.5.31): /bin/ceph-deploy --overwrite-conf new node-1:10.10.4.2
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ] ceph-deploy options:
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  username                      : None
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  func                          : <function new at 0x2023050>
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  verbose                       : False
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  overwrite_conf                : True
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  quiet                         : False
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  cd_conf                       : <ceph_deploy.conf.cephdeploy.Conf instance at 0x7fa4d670d050>
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  cluster                       : ceph
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  ssh_copykey                   : True
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  mon                           : ['node-1:10.10.4.2']
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  public_network                : None
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  ceph_conf                     : None
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  cluster_network               : None
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  default_release               : False
+[2018-01-19 06:05:55,774][ceph_deploy.cli][INFO  ]  fsid                          : None
+[2018-01-19 06:05:55,774][ceph_deploy.new][DEBUG ] Creating new cluster named ceph
+[2018-01-19 06:05:55,775][ceph_deploy.new][INFO  ] making sure passwordless SSH succeeds
+[2018-01-19 06:05:55,799][10.10.4.2][DEBUG ] connected to host: node-1.domain.tld 
+[2018-01-19 06:05:55,804][10.10.4.2][INFO  ] Running command: ssh -CT -o BatchMode=yes 10.10.4.2
+[2018-01-19 06:05:56,359][10.10.4.2][DEBUG ] connected to host: 10.10.4.2 
+[2018-01-19 06:05:56,360][10.10.4.2][DEBUG ] detect platform information from remote host
+[2018-01-19 06:05:56,386][10.10.4.2][DEBUG ] detect machine type
+[2018-01-19 06:05:56,390][10.10.4.2][DEBUG ] find the location of an executable
+[2018-01-19 06:05:56,393][10.10.4.2][INFO  ] Running command: /usr/sbin/ip link show
+[2018-01-19 06:05:56,412][10.10.4.2][INFO  ] Running command: /usr/sbin/ip addr show
+[2018-01-19 06:05:56,432][10.10.4.2][DEBUG ] IP addresses found: ['10.10.5.2', '10.10.0.2', '10.10.6.2', '192.168.200.3', '10.10.7.2', '10.10.2.3', '10.10.4.2', '10.10.8.2']
+[2018-01-19 06:05:56,433][ceph_deploy.new][DEBUG ] Resolving host 10.10.4.2
+[2018-01-19 06:05:56,433][ceph_deploy.new][DEBUG ] Monitor node-1 at 10.10.4.2
+[2018-01-19 06:05:56,433][ceph_deploy.new][DEBUG ] Monitor initial members are ['node-1']
+[2018-01-19 06:05:56,433][ceph_deploy.new][DEBUG ] Monitor addrs are ['10.10.4.2']
+[2018-01-19 06:05:56,433][ceph_deploy.new][DEBUG ] Creating a random mon key...
+[2018-01-19 06:05:56,433][ceph_deploy.new][DEBUG ] Writing monitor keyring to ceph.mon.keyring...
+[2018-01-19 06:05:56,434][ceph_deploy.new][DEBUG ] Writing initial config to ceph.conf...

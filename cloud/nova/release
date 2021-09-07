@@ -1,0 +1,4 @@
+[Nova]
+vendor = Fedora Project
+product = OpenStack Nova
+package = 4.0.2.el7.centos

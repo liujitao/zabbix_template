@@ -1,0 +1,1 @@
+*/1 * * * * source /root/openrc ;nova list --all-tenant |awk -F"|" '{print $2,$3,$4}' >/etc/zabbix/script/vm.state.file ;echo "File_Finished" >> /etc/zabbix/script/vm.state.file
